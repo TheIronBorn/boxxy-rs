@@ -50,7 +50,7 @@ You can use the `objdump` utility to generate shellcode from assembly:
 You may need to build a fully static binary, this is possible using the
 `x86_64-unknown-linux-musl` target.
 
-    cargo build --release --example boxxy --target x86_64-unknown-linux-musl
+    OPENSSL_DIR=/usr cargo build --release --example boxxy --target x86_64-unknown-linux-musl
     strip target/x86_64-unknown-linux-musl/release/examples/boxxy
 
 ## Debugging systemd security
